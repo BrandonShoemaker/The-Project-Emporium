@@ -64,8 +64,8 @@ header{
 
 .absNavHolder{
     position: absolute;
-    right: 50px;
-    top: -70px;
+    right: 0%;
+    top: -8%;
     width: 33%;
 }
 
@@ -183,4 +183,53 @@ header > div > div > nav > a{
     padding-left: 30px;
     padding-top: 15px;
     width: 70%;
+}
+
+.Projects{
+    flex-wrap: nowrap;
+    padding: 70px;
+    align-items: center;
+}
+
+.Projects > div{
+    flex: 1 33%;
+    padding: 20px;
+}
+
+.flexProject a, .bigProj a{
+    flex: 0 25%;
+    height: 40%;
+    margin: 40px 20px;
+}
+
+.flexProject a div, .bigProj a div{
+    border-radius: 50%;
+    overflow: hidden;
+    width: 100%;
+    /* position: relative; */
+    margin-bottom: 10px;
+}
+
+.flexProject a div img, .bigProj a div img{
+    width: 190%;
+    margin-bottom: -3%;
+    margin-left: -45%;
+    opacity: 75%;
+    transition: .5s;
+}
+
+.flexProject a div img:hover, .bigProj a div img:hover{
+    opacity: 100%;
+}
+
+.flexProject a div h4, .bigProj a div h4{
+    font-size: .7vw;
+    padding: 4px;
+}
+
+.titleContainer{
+    border-radius: 15%;
+    overflow: unset;
+    width: 50%;
+    text-align: center;
 }
