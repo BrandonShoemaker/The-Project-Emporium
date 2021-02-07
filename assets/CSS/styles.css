@@ -202,7 +202,7 @@ header > div > div > nav > a{
     margin: 40px 20px;
 }
 
-.flexProject a div, .bigProj a div{
+.flexProject a figure, .bigProj a figure{
     border-radius: 50%;
     overflow: hidden;
     width: 100%;
@@ -210,7 +210,7 @@ header > div > div > nav > a{
     margin-bottom: 10px;
 }
 
-.flexProject a div img, .bigProj a div img{
+.flexProject a figure img, .bigProj a figure img{
     width: 190%;
     margin-bottom: -3%;
     margin-left: -45%;
@@ -218,18 +218,32 @@ header > div > div > nav > a{
     transition: .5s;
 }
 
-.flexProject a div img:hover, .bigProj a div img:hover{
+.flexProject a figure img:hover, .bigProj a figure img:hover{
     opacity: 100%;
 }
 
-.flexProject a div h4, .bigProj a div h4{
-    font-size: .7vw;
+.bigProj a figcaption h4{
+    font-size: 1vw;
     padding: 4px;
 }
 
-.titleContainer{
-    border-radius: 15%;
-    overflow: unset;
-    width: 50%;
-    text-align: center;
+.flexProject a figcaption h5{
+    font-size: .8vw;
+    padding: 4px;
 }
+
+.figCapContainer1, .figCapContainer2{
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: center;
+    border-radius: 5%;
+}
+
+.figCapContainer1{
+    width: 50%;
+}
+
+.figCapContainer2{
+    width: 100%;
+}
+
