@@ -30,6 +30,10 @@ body{
     text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px var(--colorLpurp), 0 0 20px var(--colorLpurp), 0 0 25px var(--colorLpurp), 0 0 30px var(--colorLpurp), 0 0 35px var(--colorLpurp);
 }
 
+.neonBox{
+    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px var(--colorYours), 0 0 20px var(--colorYours), 0 0 25px var(--colorYours), 0 0 30px var(--colorYours), 0 0 35px var(--colorYours);
+}
+
 .meFont{
     font-style: italic;
 }
@@ -40,6 +44,12 @@ body{
 
 .textRight{
     text-align: right;
+}
+
+.flexContainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 header{
@@ -72,7 +82,6 @@ header > div > div > nav > a{
     justify-content: center;
     align-items: flex-end;
     padding-bottom: 15px;
-    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px var(--colorYours), 0 0 20px var(--colorYours), 0 0 25px var(--colorYours), 0 0 30px var(--colorYours), 0 0 35px var(--colorYours);
     transition: .5s
 }
 
@@ -107,13 +116,6 @@ header > div > div > nav > a{
     text-align: center;
     color: var(--colorDpurp);
     background-color: var(--colorLpurp);
-    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px var(--colorYours), 0 0 20px var(--colorYours), 0 0 25px var(--colorYours), 0 0 30px var(--colorYours), 0 0 35px var(--colorYours);
-}
-
-.flexColorContainer{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
 }
 
 .flexColorContainer h2{
@@ -131,12 +133,54 @@ header > div > div > nav > a{
     width: 50%;
     height: 2%;
     background-color: white;
-    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px var(--colorYours), 0 0 20px var(--colorYours), 0 0 25px var(--colorYours), 0 0 30px var(--colorYours), 0 0 35px var(--colorYours);
 }
 
 .flexColorContainer img{
     width: 100%;
     height: 27vw;
     flex: 1 100%;
+    opacity: 75%;
 }
 
+.information{
+    background-color: var(--colorDpurp);
+    box-shadow: inset 0 0 5px white, inset 0 0 10px white, inset 0 0 15px var(--colorYours), inset 0 0 20px var(--colorYours), inset 0 0 25px var(--colorYours), inset 0 0 30px var(--colorYours), inset 0 0 35px var(--colorYours);
+}
+
+.flexAbout{
+    padding: 70px;
+    align-items: flex-start;
+}
+
+.flexAbout img{
+    flex: 0 50%;
+    width: 50%;
+}
+
+.aboutMe{
+    flex: 0 50%;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.aboutMe h3{
+    flex: 0 100%;
+    font-size: 1.75vw;
+    padding-bottom: 15px;
+    padding-top: 60px;
+    padding-left: 30px;
+}
+
+.aboutMe div{
+    width: 70%;
+    margin-left: 30px;
+}
+
+.aboutMe p{
+    color: var(--colorLpurp);
+    font-size: 1.2vw;
+    line-height: 1.7;
+    padding-left: 30px;
+    padding-top: 15px;
+    width: 70%;
+}
