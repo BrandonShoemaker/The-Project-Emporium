@@ -290,6 +290,10 @@ header > div > div > nav > a{
     display: inline-block;
 }
 
+.contactTitle h3{
+    padding-top: 10px;
+}
+
 .smallTextArea{
     width: 50%;
     color: var(--colorYours);
