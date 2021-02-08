@@ -70,7 +70,7 @@ body{
 
 /* sets background of header element to match the hero */
 header{
-    background-image: url("../images/hero.jpg");
+    background-image: url("../images/image.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-position: 80%;
@@ -117,7 +117,7 @@ header > div > div > nav > a:hover{
 
 /* sets hero background, makes it a flexbox, scales, and centers items  */
 .hero{
-    background-image: url("../images/hero.jpg");
+    background-image: url("../images/image.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-position: 80%;
