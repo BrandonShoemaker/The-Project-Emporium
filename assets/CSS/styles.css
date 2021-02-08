@@ -28,22 +28,22 @@ body{
 
 /* in future will dictate coloration of page when color is picked from the color section, sets neon box-shadow effect for the users color choice*/
 .neonYours{
-    text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px var(--colorYours), 0 0 20px var(--colorYours), 0 0 25px var(--colorYours), 0 0 30px var(--colorYours), 0 0 35px var(--colorYours);
+    text-shadow: 0 0 .25vw white, 0 0 .5vw white, 0 0 .75vw var(--colorYours), 0 0 1vw var(--colorYours), 0 0 1.25vw var(--colorYours), 0 0 1.5vw var(--colorYours), 0 0 1.75vw var(--colorYours);
 }
 
 /* unlike neonYours, this is reserved for nouns that are about me, keeping a part of me contant throughout the page, sets my colors box-shadow */
 .neonMe{
-    text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px var(--colorLpurp), 0 0 20px var(--colorLpurp), 0 0 25px var(--colorLpurp), 0 0 30px var(--colorLpurp), 0 0 35px var(--colorLpurp);
+    text-shadow: 0 0 .25vw white, 0 0 .5vw white, 0 0 .75vw var(--colorLpurp), 0 0 1vw var(--colorLpurp), 0 0 1.25vw var(--colorLpurp), 0 0 1.5vw var(--colorLpurp), 0 0 1.75vw var(--colorLpurp);
 }
 
 /* adds neon to div elements */
 .neonBox{
-    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px var(--colorYours), 0 0 20px var(--colorYours), 0 0 25px var(--colorYours), 0 0 30px var(--colorYours), 0 0 35px var(--colorYours);
+    box-shadow: 0 0 .25vw white, 0 0 .5vw white, 0 0 .75vw var(--colorYours), 0 0 1vw var(--colorYours), 0 0 1.25vw var(--colorYours), 0 0 1.5vw var(--colorYours), 0 0 1.75vw var(--colorYours);
 }
 
 /* adds inset neon to div elements */
 .neonBoxInset{
-    box-shadow: inset 0 0 5px white, inset 0 0 10px white, inset 0 0 15px var(--colorYours), inset 0 0 20px var(--colorYours), inset 0 0 25px var(--colorYours), inset 0 0 30px var(--colorYours), inset 0 0 35px var(--colorYours);
+    box-shadow: inset 0 0 .25vw white, inset 0 0 .5vw white, inset 0 0 .75vw var(--colorYours), inset 0 0 1vw var(--colorYours), inset 0 0 1.25vw var(--colorYours), inset 0 0 1.5vw var(--colorYours), inset 0 0 1.75vw var(--colorYours);
 }
 
 /* similar to neonMe, is specific to me, makes text italicized */
