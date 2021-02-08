@@ -391,5 +391,14 @@ header > div > div > nav > a:hover{
     .absNavHolder a{
         padding-bottom: .75vw;
     }
+
+    .flexProject a figure img{
+        margin-bottom: -15%;
+    }
+
+    .bigProj a figure img{
+        width: 200%;
+        margin-bottom: -10%;
+    }
 }
 
