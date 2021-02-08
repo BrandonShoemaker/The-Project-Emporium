@@ -23,7 +23,7 @@ Aside from aesthetics, I also wish to simply improve performance all around as a
 
 ## Deployed Project
 
-
+https://brandonshoemaker.github.io/The-Project-Emporium/
 
 ## Installation
 
