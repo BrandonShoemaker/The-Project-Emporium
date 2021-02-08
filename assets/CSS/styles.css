@@ -34,6 +34,10 @@ body{
     box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px var(--colorYours), 0 0 20px var(--colorYours), 0 0 25px var(--colorYours), 0 0 30px var(--colorYours), 0 0 35px var(--colorYours);
 }
 
+.neonBoxInset{
+    box-shadow: inset 0 0 5px white, inset 0 0 10px white, inset 0 0 15px var(--colorYours), inset 0 0 20px var(--colorYours), inset 0 0 25px var(--colorYours), inset 0 0 30px var(--colorYours), inset 0 0 35px var(--colorYours);
+}
+
 .meFont{
     font-style: italic;
 }
@@ -144,7 +148,6 @@ header > div > div > nav > a{
 
 .information{
     background-color: var(--colorDpurp);
-    box-shadow: inset 0 0 5px white, inset 0 0 10px white, inset 0 0 15px var(--colorYours), inset 0 0 20px var(--colorYours), inset 0 0 25px var(--colorYours), inset 0 0 30px var(--colorYours), inset 0 0 35px var(--colorYours);
 }
 
 .flexAbout{
@@ -186,12 +189,25 @@ header > div > div > nav > a{
 }
 
 .Projects{
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     padding: 70px;
     align-items: center;
 }
 
-.Projects > div{
+.projTitle, .projTitle h3, .projTitle div, .contactTitle, .contactTitle h3, .contactTitle div{
+    flex: 0 100%;
+}
+
+.projTitle h3, .contactTitle h3{
+    font-size: 1.75vw;
+    margin-bottom: 15px;
+}
+
+.projTitle div, .contactTitle div{
+    width: 70%;
+}
+
+.bigProj, .flexProject{
     flex: 1 33%;
     padding: 20px;
 }
@@ -218,7 +234,7 @@ header > div > div > nav > a{
     transition: .5s;
 }
 
-.flexProject a figure img:hover, .bigProj a figure img:hover{
+.flexProject a:hover figure img, .bigProj a:hover figure img{
     opacity: 100%;
 }
 
@@ -247,3 +263,62 @@ header > div > div > nav > a{
     width: 100%;
 }
 
+.gitLink {
+    flex: 1 100%;
+    width: 100%;
+    text-align: center;
+    font-size: 1.3vw;
+}
+
+.contact {
+    padding: 60px;
+    background-color: var(--colorDpurp);
+}
+
+.contact form{
+    margin: 20px;
+}
+
+.contact form input, .contact form textarea{
+    display: block;
+    font-size: 1vw;
+}
+
+.contact form label{
+    font-size: 1.3vw;
+    margin: 5px;
+    display: inline-block;
+}
+
+.smallTextArea{
+    width: 50%;
+    color: var(--colorYours);
+}
+
+.smallTextArea{
+    height: 10%;
+}
+
+.formInput{
+    padding: 3px;
+    font-family: inherit;
+    opacity: 75%;
+}
+
+.formInput:focus{
+    opacity: 100%;
+}
+
+.contact button{
+    background-color: var(--colorDpurp);
+    margin-left: 20px;
+}
+
+.contact button:hover{
+    background-color: var(--colorYours);
+}
+
+.contact button div h5{
+    font-size: .8vw;
+    padding: 5px;
+}
