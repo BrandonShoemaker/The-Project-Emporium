@@ -1,9 +1,11 @@
+/* base page rules */
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+/* Page variables, colors */
 :root{
     --colorpurp: #3a194d;
     --colorLpurp: #8a2e7d;
@@ -11,72 +13,88 @@
     --colorDpurp: #20194d;
 }
 
+/* Base body rules, sets default background color, font fam, and text color */
 body{
     background-color: var(--colorpurp);
     font-family: 'Amaranth', sans-serif;
     color: var(--colorDpurp);
 }
 
+/* setup for neonYours/me, sets text to white and neon font */
 .neon{
     font-family: 'Warnes', cursive;
     color: white;
 }
 
+/* in future will dictate coloration of page when color is picked from the color section, sets neon box-shadow effect for the users color choice*/
 .neonYours{
     text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px var(--colorYours), 0 0 20px var(--colorYours), 0 0 25px var(--colorYours), 0 0 30px var(--colorYours), 0 0 35px var(--colorYours);
 }
 
+/* unlike neonYours, this is reserved for nouns that are about me, keeping a part of me contant throughout the page, sets my colors box-shadow */
 .neonMe{
     text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px var(--colorLpurp), 0 0 20px var(--colorLpurp), 0 0 25px var(--colorLpurp), 0 0 30px var(--colorLpurp), 0 0 35px var(--colorLpurp);
 }
 
+/* adds neon to div elements */
 .neonBox{
     box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px var(--colorYours), 0 0 20px var(--colorYours), 0 0 25px var(--colorYours), 0 0 30px var(--colorYours), 0 0 35px var(--colorYours);
 }
 
+/* adds inset neon to div elements */
 .neonBoxInset{
     box-shadow: inset 0 0 5px white, inset 0 0 10px white, inset 0 0 15px var(--colorYours), inset 0 0 20px var(--colorYours), inset 0 0 25px var(--colorYours), inset 0 0 30px var(--colorYours), inset 0 0 35px var(--colorYours);
 }
 
+/* similar to neonMe, is specific to me, makes text italicized */
 .meFont{
     font-style: italic;
 }
 
+/* aligns text left */
 .textLeft{
     text-align: left;
 }
 
+/* aligns text right */
 .textRight{
     text-align: right;
 }
 
+/* sets the div to be a flex box with centered elements */
 .flexContainer{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
+/* sets background of header element to match the hero */
 header{
     background-image: url("../images/hero.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-position: 80%;
 }
-.realNavHolder{
+
+/* sets relative div container for absNavHolder */
+.relNavHolder{
     position: relative;
 }
 
+/* positions nav menu to appear to be a pop-up menu*/
 .absNavHolder{
     position: absolute;
     right: 0%;
-    top: -8%;
+    top: -4vw;
     width: 33%;
 }
 
+/* makes nav bar a flexbox */
 header > div > div > nav{
     display: flex;
 }
 
+/* styles the menu, adds background, rounds corners, sets flex-basis, centers everything, sets font-size, adds a transition timer, removes anchor decor, colors, and padds */
 header > div > div > nav > a{
     background-color: var(--colorLpurp);
     border-radius: 35%;
@@ -85,20 +103,19 @@ header > div > div > nav > a{
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    padding-bottom: 15px;
+    padding-bottom: .75vw;
+    font-size: 1vw;
+    color: var(--colorDpurp);
+    text-decoration: none;
     transition: .5s
 }
 
+/* when hovering over a menu option, it appears to pop out */
 header > div > div > nav > a:hover{
     height: 8.5vw;
 }
 
-header > div > div > nav > a{
-    font-size: 1vw;
-    color: var(--colorDpurp);
-    text-decoration: none;
-}
-
+/* sets hero background, makes it a flexbox, scales, and centers items  */
 .hero{
     background-image: url("../images/hero.jpg");
     background-attachment: fixed;
@@ -111,34 +128,39 @@ header > div > div > nav > a{
     align-items: center;
 }
 
+/* scales font-size and centers */
 .hero h1{
     font-size: 2.8vw;
     text-align: center;
 }
 
+/* centers  and sets default for color section */
 .colorPicker{
     text-align: center;
     color: var(--colorDpurp);
     background-color: var(--colorLpurp);
 }
 
+/* scales padding of color title and text-size, and sets flex-basis */
 .flexColorContainer h2{
-    padding-top: 95px;
+    padding-top: 3vw;
     padding-bottom: 10px;
     font-size: 2vw;
     flex: 1 100%;
 }
 
+/* sets use of div to act line a custom border, scalable size, and spacing, neon friendly */
 .border{
     color: white;
     font-size: .2vw;
-    margin-bottom: 10px;
+    margin-bottom: .5vw;
     border-radius: 25%;
     width: 50%;
     height: 2%;
     background-color: white;
 }
 
+/* sets scalable dimentions and lowers opacity */
 .flexColorContainer img{
     width: 100%;
     height: 27vw;
@@ -146,39 +168,46 @@ header > div > div > nav > a{
     opacity: 75%;
 }
 
+/* sets default color for about me section */
 .information{
     background-color: var(--colorDpurp);
 }
 
+/* scalable spacing, and center align items */
 .flexAbout{
-    padding: 70px;
+    padding: 4.5vw;
     align-items: flex-start;
 }
 
+/* sets img size and flex-basis to share with ABout me paragraph */
 .flexAbout img{
     flex: 0 50%;
     width: 50%;
 }
 
+/* positions everything around the starting points of the flexbox and sets flex-basis */
 .aboutMe{
     flex: 0 50%;
     justify-content: flex-start;
     align-items: flex-start;
 }
 
+/* sets aboutMe title size and space flex-basis to mimic black display, scalable sizeing and some spacing*/
 .aboutMe h3{
     flex: 0 100%;
     font-size: 1.75vw;
     padding-bottom: 15px;
-    padding-top: 60px;
+    padding-top: 3vw;
     padding-left: 30px;
 }
 
+/* scales the border size */
 .aboutMe div{
     width: 70%;
     margin-left: 30px;
 }
 
+/* styles the paragraph element, sets color, scales size, line-height, sets spacing and size */
 .aboutMe p{
     color: var(--colorLpurp);
     font-size: 1.2vw;
@@ -188,36 +217,44 @@ header > div > div > nav > a{
     width: 70%;
 }
 
+/* Projects was a headache */
+/* sets flexbox to be able to wrap if need be ad adds scable padding */
 .Projects{
     flex-wrap: wrap;
-    padding: 70px;
+    padding: 3.5vw;
     align-items: center;
 }
 
+/* project title style, set to flex-basis to mimic black display */
 .projTitle, .projTitle h3, .projTitle div, .contactTitle, .contactTitle h3, .contactTitle div{
     flex: 0 100%;
 }
 
+/* sets scalable font size and spacing */
 .projTitle h3, .contactTitle h3{
     font-size: 1.75vw;
-    margin-bottom: 15px;
+    margin-bottom: .75vw;
 }
 
+/* sets current and next titles border width */
 .projTitle div, .contactTitle div{
     width: 70%;
 }
 
+/* Flex-basis tells the 3 project divs to share space envenly with scalable spacing */
 .bigProj, .flexProject{
     flex: 1 33%;
-    padding: 20px;
+    padding: 1vw;
 }
 
+/* inside project div 2, all anchor projects have flex-basis of 1/4 of the screen, margin forces them to be in rows of 3 this must happen for proper spacing of them. also sets height */
 .flexProject a, .bigProj a{
     flex: 0 25%;
     height: 40%;
-    margin: 40px 20px;
+    margin: 2vw 1vw;
 }
 
+/* div of image inside proj 2 anchor tag and both big projects are circles, have a hidden overflow to make true circles, and occupy all given space and has spacing */
 .flexProject a figure, .bigProj a figure{
     border-radius: 50%;
     overflow: hidden;
@@ -226,6 +263,7 @@ header > div > div > nav > a{
     margin-bottom: 10px;
 }
 
+/* important, image dictates shape of circle, sets width to be big enough to read, displaces bottom to make true circle and to center, lowers opacity and adds transition time */
 .flexProject a figure img, .bigProj a figure img{
     width: 190%;
     margin-bottom: -3%;
@@ -234,20 +272,24 @@ header > div > div > nav > a{
     transition: .5s;
 }
 
+/* when project anchor tags are being hovered on, raise opacity */
 .flexProject a:hover figure img, .bigProj a:hover figure img{
     opacity: 100%;
 }
 
+/* Proj h4 tag in big project circles, scalable font and some spacing */
 .bigProj a figcaption h4{
     font-size: 1vw;
     padding: 4px;
 }
 
+/* proj h5 tag in small project circles, scalable font and more spacing */
 .flexProject a figcaption h5{
     font-size: .8vw;
     padding: 4px;
 }
 
+/* div around proj titles, centers off sized cob with magin auto, more spacing, text centering, and minimal rounding */
 .figCapContainer1, .figCapContainer2{
     margin: 0 auto;
     margin-top: 30px;
@@ -255,14 +297,17 @@ header > div > div > nav > a{
     border-radius: 5%;
 }
 
+/* sets small proj containers size */
 .figCapContainer1{
     width: 50%;
 }
 
+/* sets big proj containers size */
 .figCapContainer2{
     width: 100%;
 }
 
+/* styles link to my github, sets flex-basis to act like block display, centers and scales font */
 .gitLink {
     flex: 1 100%;
     width: 100%;
@@ -270,59 +315,81 @@ header > div > div > nav > a{
     font-size: 1.3vw;
 }
 
+/* spaces contact section and sets default background color */
 .contact {
     padding: 60px;
     background-color: var(--colorDpurp);
 }
 
+/* spaces out form */
 .contact form{
     margin: 20px;
 }
 
+/* makes inputs be block display and scalable font inside */
 .contact form input, .contact form textarea{
     display: block;
     font-size: 1vw;
 }
 
+/* makes labels inline-blocks, scales font, and spaces */
 .contact form label{
     font-size: 1.3vw;
     margin: 5px;
     display: inline-block;
 }
 
+/* styles contact divs title, adds spacing */
 .contactTitle h3{
     padding-top: 10px;
 }
 
+/* inputs resized and changes text color */
 .smallTextArea{
     width: 50%;
+    height: 10%;
     color: var(--colorYours);
 }
 
-.smallTextArea{
-    height: 10%;
-}
-
+/* spaces, and inherits body font fam, lowers opacity for selector */
 .formInput{
     padding: 3px;
     font-family: inherit;
     opacity: 75%;
 }
 
+/* raises opacity of text boxes when selected */
 .formInput:focus{
     opacity: 100%;
 }
 
+/* makes background color matche parent background, spaces */
 .contact button{
     background-color: var(--colorDpurp);
     margin-left: 20px;
 }
 
+/* sets background color when hovering over button */
 .contact button:hover{
     background-color: var(--colorYours);
 }
 
+/* sets button scalable font and spacing */
 .contact button div h5{
     font-size: .8vw;
     padding: 5px;
 }
+
+/* when screens dip below this the menu gets displaced */
+@media screen and (max-width: 575px){
+    /* rescales color title section */
+    .flexColorContainer h2{
+        padding-top: 3vw;
+    }
+
+    /* repositions nav menu */
+    .absNavHolder a{
+        padding-bottom: .75vw;
+    }
+}
+

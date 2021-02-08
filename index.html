@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- encoding -->
         <meta charset="UTF-8">
+        <!-- sets mobile compatibility -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- imports styles -->
         <link rel="stylesheet" href="./assets/CSS/styles.css">
+        <!-- importing  fonts -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Warnes&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Amaranth&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Amaranth&family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+        <!-- Title of page -->
         <title>Brandon Shoemaker's Project Portfolio</title>
     </head>
     <body>
         <header>
+            <!-- relative holder div for absolute div -->
             <div class="relNavHolder">
+                <!-- positions nav menu -->
                 <div class="absNavHolder">
                     <nav>
+                        <!-- anchors linked to parts of page -->
                         <a href="#colors" class="neon neonYours neonBox">Colors</a>
                         <a href="#about" class="neon neonYours neonBox">About</a>
                         <a href="#projects" class="neon neonYours neonBox">Projects</a>
@@ -23,9 +31,12 @@
                 </div>
             </div>
         </header>
+        <!-- hero section -->
         <section class="hero neon neonYours">
+            <!-- Main header, includes span to emphasize me -->
             <h1><span class="meFont neon neonMe"><strong>Brandon Shoemaker's</strong></span><br/> Project Emporium</h1>
         </section>
+        <!-- future section for visitors to pick their favorite color and js or some other language will calculate the analogous colors to recolor the website -->
         <section id="colors" class="colorPicker neonBox">
             <div class="flexColorContainer flexContainer">
                 <h2 class="neon neonYours">Pick Your Favorite Color!</h2>
@@ -33,7 +44,9 @@
                 <img src="./assets/images/comingSoon.jpg" alt="Coming soon">
             </div>
         </section>
+        <!-- About me, actual about me to be added later -->
         <section id="about" class="information neonBoxInset">
+            <!-- displays info and elements as flexbox -->
             <div class="flexAbout flexContainer">
                 <article class="flexContainer aboutMe textLeft">
                     <h3 class="neon neonYours">A Little Bit About <span class="neon neonMe meFont">Me!</span></h3>
@@ -43,21 +56,27 @@
                 <img src="./assets/images/hero.jpg" alt="Grayscale image of Brandon">
             </div>
         </section>
+        <!-- projects section holder -->
         <section id="projects" class="Projects flexContainer neonBox">
+            <!-- Contains title of projects -->
             <div class="flexContainer projTitle textRight">
                 <h3 class="neon neonYours"><span class="neon neonMe meFont">My</span> Biggest and Coolest Projects!</h3>
                 <div class="border neonBox">a</div>
             </div>
+            <!-- first big circle -->
             <div class="bigProj">
                 <a href="https://brandonshoemaker.github.io/run-buddy/" target="_blank">
+                    <!-- holds image -->
                     <figure class="">
                         <img src="./assets/images/Project1.JPG" alt="My Project">
                     </figure>
+                    <!-- title of image -->
                     <figcaption class="figCapContainer1 neonBox">
                         <h4 class="neon neonYours">Run-Buddy</h4>
                     </figcaption>
                 </a>
             </div>
+            <!-- all 6 little circles -->
             <div class="flexProject flexContainer">
                 <a href="">
                     <figure class="">
@@ -108,6 +127,7 @@
                     </figcaption>
                 </a>
             </div>
+            <!-- last big circle -->
             <div class="bigProj">
                 <a href="">
                     <figure class="">
@@ -118,17 +138,21 @@
                     </figcaption>
                 </a>
             </div>
+            <!-- link to github -->
             <div class="gitLink">
                 <a href="https://github.com/BrandonShoemaker">
                     <h3 class="neon neonYours">Check Out The Rest of <span class="meFont neon neonMe">My</span> Projects On Github!</h3>
                 </a>
             </div>
         </section>
+        <!-- contact form section -->
         <section id="contact" class="contact neonBoxInset">
+            <!-- contact title -->
             <div class="contactTitle flexContainer textLeft">
-                <h3 class="neon neonYours"><span class="neon neonMe meFont">My</span> Biggest and Coolest Projects!</h3>
+                <h3 class="neon neonYours">Give <span class="neon neonMe meFont">Me</span> A Holler!</h3>
                 <div class="border neonBox">a</div>
             </div>
+            <!-- contact form -->
             <form>
                 <label for="name" class="neon neonYours">Your Name:</label>
                 <input type="text" placeholder="Your Name..." name="name" id="name" class="smallTextArea formInput">
@@ -137,6 +161,7 @@
                 <label for="message" class="neon neonYours">Your Message:</label>
                 <textarea placeholder="Your Message..." name="message" id="message" rows="5" cols="94" class="formInput"></textarea>
             </form>
+            <!-- submit button -->
             <button type="submit" class="neonBox">
                 <div>
                     <h5 class="neon neonYours">Submit!</h4>
