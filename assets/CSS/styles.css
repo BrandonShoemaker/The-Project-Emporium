@@ -433,7 +433,7 @@ header > div > div > nav > a:hover{
     }
 
     .projTitle h3, .contactTitle h3{
-        font-size: 3px;
+        font-size: 3vw;
     }
 
     .bigProj a figcaption h4{
