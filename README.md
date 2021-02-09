@@ -27,11 +27,11 @@ https://brandonshoemaker.github.io/The-Project-Emporium/
 
 ## Screenshots 
 
-![header/hero](./assets/images/Screenshots/Capture1.jpg)
-![color](./assets/images/Screenshots/Capture2.jpg)
-![about](./assets/images/Screenshots/Capture3.jpg)
-![project](./assets/images/Screenshots/Capture4.jpg)
-![contact](./assets/images/Screenshots/Capture5.jpg)
+![header/hero](./assets/images/Screenshots/Capture1.JPG)
+![color](./assets/images/Screenshots/Capture2.JPG)
+![about](./assets/images/Screenshots/Capture3.JPG)
+![project](./assets/images/Screenshots/Capture4.JPG)
+![contact](./assets/images/Screenshots/Capture5.JPG)
 
 ## Installation
 
