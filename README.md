@@ -25,7 +25,7 @@ Aside from aesthetics, I also wish to simply improve performance all around as a
 
 https://brandonshoemaker.github.io/The-Project-Emporium/
 
-## Screenshots
+## Screenshots 
 
 ![header/hero](./assets/images/Screenshots/Capture1.jpg)
 ![color](./assets/images/Screenshots/Capture2.jpg)
