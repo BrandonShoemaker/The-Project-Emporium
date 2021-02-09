@@ -380,16 +380,79 @@ header > div > div > nav > a:hover{
     padding: 5px;
 }
 
+@media screen and (max-width: 980px){
+    header div div nav a{
+        font-size: 2.75vw;
+        padding: 0 3%;
+        height: 9vw;
+    }
+
+    header div div nav a:hover{
+        height: 10.5vw;
+    }
+
+    .absNavHolder a{
+        padding-bottom: 1vw;
+    }
+
+    .absNavHolder{
+        right: 12.5%;
+        top: -4vw;
+        width: 70%;
+    }
+
+    .hero h1{
+        font-size: 6vw
+    }
+
+    .flexColorContainer{
+        font-size: 4vw;
+        padding-bottom: 8px;
+    }
+
+    .border{
+        width: 93%;
+    }
+
+    .aboutMe h3{
+        font-size: 3vw;
+        padding-bottom: 4px;
+        padding-left: 13px;
+    }
+
+    .aboutMe div{
+        width: 87%;
+        margin-left: 13px;
+    }
+
+    .aboutMe p{
+        font-size: 1.9vw;
+        padding-left: 20px;
+        padding-top: 8px;
+        width: 90%;
+    }
+
+    .projTitle h3, .contactTitle h3{
+        font-size: 3px;
+    }
+
+    .bigProj a figcaption h4{
+        font-size: 2vw;
+    }
+
+    .flexProject a figcaption h5{
+        font-size: 1.5vw;
+    }
+
+    .gitLink{
+        font-size: 2.3vw;
+    }
+}
 /* when screens dip below this the menu gets displaced */
 @media screen and (max-width: 575px){
     /* rescales color title section */
     .flexColorContainer h2{
         padding-top: 3vw;
-    }
-
-    /* repositions nav menu */
-    .absNavHolder a{
-        padding-bottom: .75vw;
     }
 
     .flexProject a figure img{
